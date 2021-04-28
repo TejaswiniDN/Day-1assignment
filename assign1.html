@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration form</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+        
+  
+  
+    </head>
+<script type="text/javascript" src="index.js"></script>
+<body>
+
+<div>
+    <h1><i>GET REGISTER..!!</i></h1>
+  <form action="/action_page.php">
+    <h2>Personal Details:</h2>
+    <p><b>Name:</b></p>
+    <input type="text" id="fname" name="Name" placeholder="Enter your full name.."><br>
+    <p><b>Enter your date of birth:</b></p>
+    <input type="date"/>  <br>
+    <p><b>Gender:</b></p>
+    <input type="radio" id="male" name="gender" value="male"/>
+    <label for="male">Male</label><br>
+    <input type="radio" id="female" name="gender" value="female"/>
+    <label for="female">Female</label><br>
+    <input type="radio" id="others" name="gender" value="others"/>
+    <label for="others">Others</label><br>
+    <p><b>Upload your photo</b></p>
+    <label style="color:red;">Note:Must have size between 50kb-200kb</label><br>
+    <input type="file" id="photo" name="fileupload" accept="image/*">
+  </form>
+  <hr>
+  <form>
+      <h2><b>Contact Details:</b></h2>
+      <p><b>Phone number:</b></p>
+      <input type="text" name="pno*" id="pno" placeholder="Phone Number"/><br>
+      <p><b>Address:</b></p>
+      <textarea rows="5" columns="20" name="address" >Enter your present address:</textarea>
+      <p><b>Email id:</b></p>
+      <input type="email" name="email*" id="email" placeholder="E-mail"/><br>
+      <p><b>Password:</b></p>
+      <input type="password" id="pass" name="password*" placeholder="password"/>
+      <p><b>Re-enter your password:</b></p>
+      <input type="password" id="pass" name="password*" placeholder="re-enter password"/>
+    </form>
+    <hr>
+    <form>
+        <h2>Educational qualification:</h2>
+        <select class="max" name="dropdown">Maximum Qualification:
+            <option value="10+2" selected> 10+2</option>
+            <option value="BTech">BTech</option>
+            <option value="BArc">BArc</option>
+            <option value="Msc Computerscience">Msc Computerscience</option>
+            <option value="Graduation">Any graduation degree</option>
+            <option value="Mtech">Mtech</option>
+        </select>
+        <p><strong>Languages known:</strong></p>
+        <input type="checkbox" name="HTML">HTML<br>
+        <input type="checkbox" name="CSS">CSS<br>
+        <input type="checkbox" name="JAVASCRIPT">JAVASCRIPT<br>
+        <input type="checkbox" name="Angular.js">ANGULAR<br>
+        <input type="checkbox" name="REACT">REACT<br>
+        ANY OTHER LANGUAGES KNOWN:
+        <input type="text" name="any_other" size="20px"/><br>
+        <input type="submit" id="submit" name="submit" value="Submit"/>
+
+
+
+      
+    </form>
+</div>
+
+</body>
+</html>
